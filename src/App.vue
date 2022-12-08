@@ -1,18 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HeaderPage :arrayNav="arrNav"/>
+    <MainPage/>
+    <FooterPage/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderPage from './components/HeaderPage.vue'
+import MainPage from './components/MainPage.vue'
+import FooterPage from './components/FooterPage.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    HeaderPage,
+    MainPage,
+    FooterPage
+  },
+  data() {
+       return {
+          arrNav: ['Home','Apple','Microsoft','Android','Forums','Contact us','JOIN US']
+       }
+   },
 }
 </script>
 
@@ -22,7 +32,5 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
