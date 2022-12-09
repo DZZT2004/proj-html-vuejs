@@ -33,7 +33,7 @@ export default {
     justify-content: space-between;
     nav{
         display: flex;
-        gap: 20px;
+        gap: 30px;
         flex-basis: 70%;
         text-align: end;
         margin-left: 400px;
