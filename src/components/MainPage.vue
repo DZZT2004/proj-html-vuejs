@@ -189,7 +189,9 @@
       <button>SIGN UP <font-awesome-icon icon="fa-solid fa-chevron-right" /></button>
     </div>
     <div class="ourNewsletter">
-        
+      <h1>Subscribe to our Newsletter</h1>
+      <input type="text" placeholder="Insert your email*">
+      <button>Send</button>
     </div>
   </div>
 </template>
@@ -355,6 +357,7 @@ export default {
       }
       hr{
         width: 100px;
+        margin-bottom: 10px;
         position: relative;
         right: 140px;
         border: 1px solid orange;
@@ -447,6 +450,32 @@ export default {
     font-weight: bold;
     margin-top: 10px;
     display: block;
+    margin: 30px auto;
+  }
+}
+
+.ourNewsletter{
+  background-color: rgb(245, 245, 245);
+  padding-top: 50px;
+  padding-bottom: 100px;
+  h1{
+    margin-top: 0;
+    padding-top: 50px;
+    font-weight: 600;
+  }
+  input{
+    width: 700px;
+    height: 50px;
+    margin-right: 30px;
+  }
+  button{
+    background-color: black;
+    color: white;
+    padding: 20px 100px;
+    border: none;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
     margin: 30px auto;
   }
 }
