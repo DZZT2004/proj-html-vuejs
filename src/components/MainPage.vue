@@ -128,10 +128,54 @@
         </div>
     </div>
     <div class="blog">
-        
+      <h3>READ OUR BLOG <font-awesome-icon icon="fa-solid fa-arrow-right" /></h3>
     </div>
     <div class="forumSections">
-        
+      <h4>PHASELLUS EGET METUS</h4>
+      <h1>Forum Sections</h1>
+      <hr>
+      <div class="forumContainer">
+        <div class="fSection">
+          <hr>
+          <font-awesome-icon class="icona" icon="fa-solid fa-file" />
+          <h3>News & Community</h3>
+        </div>
+        <div class="fSection">
+          <hr>
+          <font-awesome-icon class="icona" icon="fa-brands fa-apple" />
+          <h3>Apple Forum</h3>
+        </div>
+        <div class="fSection">
+          <hr>
+          <font-awesome-icon class="icona" icon="fa-brands fa-windows" />
+          <h3>Microsoft Forum</h3>
+        </div>
+        <div class="fSection">
+          <hr>
+          <font-awesome-icon class="icona" icon="fa-brands fa-android" />
+          <h3>Android Forum</h3>
+        </div>
+        <div class="fSection">
+          <hr>
+          <font-awesome-icon class="icona" icon="fa-solid fa-mug-saucer" />
+          <h3>General Discussion</h3>
+        </div>
+        <div class="fSection">
+          <hr>
+          <font-awesome-icon class="icona" icon="fa-solid fa-cubes" />
+          <h3>Apps & Software</h3>
+        </div>
+        <div class="fSection">
+          <hr>
+          <font-awesome-icon class="icona" icon="fa-solid fa-laptop" />
+          <h3>Gadgets & Stuff</h3>
+        </div>
+        <div class="fSection">
+          <hr>
+          <font-awesome-icon class="icona" icon="fa-solid fa-wrench" />
+          <h3>Tutorials & Guides</h3>
+        </div>
+      </div>
     </div>
     <div class="ourForum">
         
@@ -327,6 +371,52 @@ export default {
           color: #62676c;
         }
       }
+    }
+  }
+}
+
+.blog{
+  background-color: black;
+  color: white;
+  padding: 30px
+}
+.forumSections{
+  background-color: rgb(245, 245, 245);
+  h4{
+    margin-top: 0;
+    padding-top: 80px;
+  }
+  hr{
+    width: 70px;
+    border: 1px solid #fc8c5e;
+    margin: 30px auto;
+  }
+  .forumContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px 300px 30px 300px;
+    .fSection{
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      flex-basis: 22%;
+      padding-bottom: 60px;
+      hr{
+        width: 100%;
+        border: 1px solid #399bc0;
+        margin: 0 0 30px 0;
+      }
+      .icona{
+      background-color: #fc8c5e;
+      color: white;
+      width: 50px;
+      margin: auto;
+      border-radius: 50%;
+      font-size: 50px;
+      padding: 20px;
+    }
     }
   }
 }
