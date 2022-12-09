@@ -178,10 +178,15 @@
       </div>
     </div>
     <div class="ourForum">
-        
+      <h3>GO TO OUR FORUM <font-awesome-icon icon="fa-solid fa-arrow-right" /></h3>
     </div>
     <div class="ourCommunity">
-        
+      <h1>Hey! Join to our Community</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Dolorum quo, recusandae et, aperiam minima illum quod quaerat possimus ipsum veniam eum tempore architecto hic.
+      </p>
+      <button>SIGN UP <font-awesome-icon icon="fa-solid fa-chevron-right" /></button>
     </div>
     <div class="ourNewsletter">
         
@@ -375,7 +380,7 @@ export default {
   }
 }
 
-.blog{
+.blog, .ourForum{
   background-color: black;
   color: white;
   padding: 30px
@@ -418,6 +423,31 @@ export default {
       padding: 20px;
     }
     }
+  }
+}
+.ourCommunity{
+  background-image: url("../assets/join_now_cta_bg.jpg");
+  padding: 200px 400px 150px 400px;
+  gap: 30px;
+  color: white;
+  h1{
+    font-size: 50px;
+    width: 400px;
+    margin: 30px auto;
+  }
+  p{
+    letter-spacing: 1.7px;
+    line-height: 1.8;
+  }
+  button{
+    background-color: #27aabe;
+    color: white;
+    padding: 12px 35px;
+    border: none;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    margin: 30px auto;
   }
 }
 </style>
