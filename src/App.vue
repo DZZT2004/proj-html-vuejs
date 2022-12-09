@@ -2,7 +2,7 @@
   <div id="app">
     <HeaderPage :arrayNav="arrNav"/>
     <MainPage/>
-    <FooterPage/>
+    <FooterPage :arrayTopics="arrTopics" :arraySottoTopics="arrSottoTopics"/>
   </div>
 </template>
 
@@ -20,7 +20,10 @@ export default {
   },
   data() {
        return {
-          arrNav: ['Home','Apple','Microsoft','Android','Forums','Contact us','JOIN US']
+          arrNav: ['Home','Apple','Microsoft','Android','Forums','Contact us','JOIN US'],
+          arrTopics: ['AVADA TECH FORUM', 'POPULAR TOPICS', 'RECENT TOPICS', 'LATEST REPLIES'],
+          arrSottoTopics: ['Lorem ipsum dolor sit amet consectetur adipisicing elit','Voluptates omnis soluta consequatur beatae modi.', 'Eligendi atque magni quod, aspernatur similique ipsum', 'repellendus exercitationem minima est voluptates, ad fugiat assumenda vero']
+
        }
    },
 }

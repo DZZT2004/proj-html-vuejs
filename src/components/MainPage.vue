@@ -357,8 +357,7 @@ export default {
       }
       hr{
         width: 100px;
-        margin-bottom: 10px;
-        position: relative;
+        margin-left: 0;
         right: 140px;
         border: 1px solid orange;
       }
@@ -373,7 +372,10 @@ export default {
         max-height: 142px;
       }
       div{
-        flex-basis: 50%;
+        flex-basis: 40%;
+        h3{
+          margin-top: 0;
+        }
         span{
           font-size: 14px;
           color: #62676c;
